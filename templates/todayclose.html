@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/todayclose.css">
+    <title>Fill your Values</title>
+</head>
+<body>
+    <form action="/predict_today_close" method="post">
+        <div class="title">Get Stock-tastic!</div>
+        <div class="subtitle">Decode Stock Magic</div>
+        <div class="input-container ic1">
+          <input id="open" class="input" type="number" placeholder=" " name="open" />
+          <div class="cut"></div>
+          <label for="open" class="placeholder">Open Price</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="high" class="input" type="number" placeholder=" "  name="high"/>
+          <div class="cut"></div>
+          <label for="high" class="placeholder">High Price</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="low" class="input" type="number" placeholder=" " name="low"/>
+          <div class="cut cut-short"></div>
+          <label for="low" class="placeholder">Low Price</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="volume" class="input" type="number" placeholder=" " name="volume"/>
+          <div class="cut cut-short"></div>
+          <label for="volume" class="placeholder">Volume</label>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </form>      
+</body>
+</html>

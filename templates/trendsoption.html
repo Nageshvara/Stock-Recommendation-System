@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/7123c0e2af.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="static/css/trendsoption.css">
+</head>
+<body>
+    <!-- Container for the cards -->
+    <div class="cards-container">
+        <div class="card">
+            <figure>
+                <img src="https://img.freepik.com/free-vector/stock-market-analysis-illustration_23-2148588123.jpg?w=996&t=st=1696760404~exp=1696761004~hmac=ef898b29b55d3655689b43d7a9628cec21948c89a23e7b8db575da67b464a1aa" alt="Mountains" class="rectangle-image">
+                <figcaption id="todayclosebutton">Today's Close</figcaption>
+            </figure>
+            <h2 style="color: white;">Predict Today's Close Value</h2>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="https://img.freepik.com/free-vector/stock-exchange-data-concept_23-2148589828.jpg?w=996&t=st=1696760862~exp=1696761462~hmac=ec44cb4c44127249495bec0548cb0c46fd6d5e67736c7a752adafcf4e05c24fd" alt="Mountains" class="rectangle-image">
+                <figcaption id="tomorrowbutton">Future Values</figcaption>
+            </figure>
+            <h2 style="color: white;">Predict Tommorrow's Values</h2>
+        </div>
+        <!-- Add more cards here -->
+    </div>
+<script>
+    function navigate(){
+        window.location.href="{{ url_for('todayclose') }}";
+    }
+    function navigate1(){
+        window.location.href="{{ url_for('tomorrowvalues') }}";
+    }
+    document.getElementById("todayclosebutton").addEventListener("click",navigate);
+    document.getElementById("tomorrowbutton").addEventListener("click",navigate1);
+</script>
+</body>
+</html>

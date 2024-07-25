@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/personalresult.css">
+    <title>Your Personal Favourites</title>
+</head>
+<body>
+    <h1>Your Personal Favourites</h1>
+    <ul class="ag-courses-container">
+        {% for result in search_results %}
+            <li class="ag-courses-item">
+                <a href="{{ result.link }}" target="_blank">
+                    <div class="ag-courses-item_title">{{ result.word }}</div>
+                    {% if result.image_url %}
+                        <img src="{{ result.image_url }}" alt="{{ result.word }}" class="img-thumbnail">
+                    {% endif %}
+                    <div class="ag-courses-item_date-box">
+                        Top:
+                        <span class="ag-courses-item_date">{{ result.freq }}</span>
+                        <button id="showhistorybutton" type="button" class="btn btn-outline-dark">Check out</button>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Include Bootstrap JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

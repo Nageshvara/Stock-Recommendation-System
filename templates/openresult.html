@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prediction Result - Tomorrow's Open, High, Low, Volume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Font Awesome CSS -->
+    <style>
+        body {
+            background-color: black;
+            color: #1de9b6; /* Teal font color */
+            padding: 20px; /* Add some padding for spacing */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white; /* White color for h1 */
+        }
+
+        .card {
+            background-color: #212121; /* Darker background color for cards */
+            padding: 20px;
+            margin: 10px;
+            min-height: 200px; /* Set a minimum height for cards to make them square */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #1de9b6; /* Teal font color for cards */
+            border-radius: 10px; /* Rounded edges */
+        }
+
+        .card p {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap; /* Ensure the cards wrap to a new row if necessary */
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Prediction Result - Tomorrow's Open, High, Low, Volume</h1><br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <i class="fas fa-chart-line fa-4x"></i> <!-- Font Awesome icon -->
+                <p>Close Value for Tomorrow's Prediction: {{ close }}</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <i class="fas fa-chart-line fa-4x"></i> <!-- Font Awesome icon -->
+                <p>Predicted Open Value: {{ tomorrow_open[0] }}</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <i class="fas fa-chart-line fa-4x"></i> <!-- Font Awesome icon -->
+                <p>Predicted High Value: {{ tomorrow_open[1] }}</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <i class="fas fa-chart-line fa-4x"></i> <!-- Font Awesome icon -->
+                <p>Predicted Low Value: {{ tomorrow_open[2] }}</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <i class="fas fa-chart-line fa-4x"></i> <!-- Font Awesome icon -->
+                <p>Predicted Volume Value: {{ tomorrow_open[3] }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

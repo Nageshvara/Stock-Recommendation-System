@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prediction Result - Today's Close</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: grey;
+            color: white; /* White font color */
+            padding: 20px; /* Add some padding for spacing */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #212121; /* Darker background color for cards */
+            padding: 20px;
+            margin: 10px;
+            min-height: 200px; /* Set a minimum height for cards to make them square */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px; /* Rounded edges */
+        }
+
+        .card p {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center; /* Center the cards horizontally */
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Prediction Result - Today's Close</h1><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <p>{{ prediction_result }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
