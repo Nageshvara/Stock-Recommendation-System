@@ -1,0 +1,23 @@
+.headersection{
+  padding-top: 1.4%;
+}
+
+.topsection{
+  display: inline;
+}
+
+.toptext{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -0.1cm;
+  font-weight: 900;
+  color: white;
+  padding-left: 1.4%;
+  padding-top: 1.4%;
+  display: inline;
+}
+#loginbutton{
+  margin-left: 50%;
+}
+#registerbutton{
+  margin-left: 1%;
+}

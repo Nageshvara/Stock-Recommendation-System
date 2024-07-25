@@ -1,0 +1,106 @@
+.login-page{
+	background-color: #005377;
+	padding-top: 50px;
+  }
+  .brand-image{
+	height: 100px;
+	width: 100px;
+  }
+  .img-fluid{
+	padding-top: 70px;
+  }
+  .uploading{
+	padding: 5% 5% 5% 5%;
+	background-color: #EEC584;
+	background: "galaxy.jpg";
+  }
+  .upload{
+	margin-top: 3%;
+  }
+  .upload-text{
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80px;
+	text-align: center;
+  }
+  .upload-icon{
+	margin-left: 3%;
+	margin-top: 3%;
+	align-items: center;
+  }
+  .steps-text{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+  }
+  .card-text{
+	text-align: center;
+  }
+  .feature-title{
+	padding-top: 2%;
+  }
+  .name-text{
+	color:black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding-top: 3%;
+  }
+  .submit-button{
+	padding-top: 2%;
+  }
+  .gifim{
+	background-position: center;
+	margin-left: 30%;
+	margin-right: 0%;
+	margin-top: 0%;
+	padding-right: 0%;
+	padding-top: 15%;
+  }
+  body{
+  height: 100%;
+  }
+  .big-heading {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  padding-left: 25%;
+  padding-top: 25%;
+  }
+  .frontpg{
+  background-color: black;
+  padding-bottom: 11%;
+  }
+  .getsb{
+  margin-left: 45%;
+  margin-top: 5%;
+  }
+  .depe{
+  font-family: 'Roboto Slab', serif;
+  padding-left: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  font-size: 3.5rem;
+  }
+  .dpim{
+  height: 273px;
+  float: right;
+  background-color: black;
+  }
+  .lid{
+  padding-top: 6%;
+  }
+  .lil{
+  padding-top: 5%;
+  padding-left: 9%;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.8rem;
+  }
+  .c2{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 300px;
+}
